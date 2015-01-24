@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>hexcodes</title>
+        <meta title="description" content="All possible three digit hexcodes">
+        <meta title="author" content="Chris Nager">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>body{margin:0;font:300 1.5em "Helvetica Neue",sans-serif;color:#222}header,li>a,footer{padding:2em}h1{font-weight:500}a{text-decoration:none;color:#0cf}a:hover,a:focus{text-decoration:underline}p>i{font-size: 62.5%}ul{margin-top:0;margin-bottom:0;padding-left:0;list-style:none}li>a{display:block;color:#222}li:last-child>a{color:#fff}</style>
+    </head>
+    <body>
+        <header>
+            <h1><a href="//github.com/chrisnager/hexcodes">hexcodes</a></h1>
+            <p>All possible three digit hexcodes</p>
+        </header>
+        <main></main>
+        <footer>
+            <small><a href="//github.com/chrisnager/hexcodes">github</a> &middot; <a href="//twitter.com/chrisnager">@chrisnager</a></small>
+        </footer>
+
+        <script>
+            var colors = document.createElement('ul'),
+                s = ['f', 'e', 'd', 'c', 'b', 'a', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0']
+            
+            s.forEach(function(h) {
+                s.forEach(function(e) {
+                    s.forEach(function(x) {
+                        var color = document.createElement('li'),
+                            colorCode = document.createElement('code'),
+                            hex = '#' + h + e + x
+            
+                        colorCode.textContent = color.style.backgroundColor = hex
+            
+                        color.appendChild(colorCode)
+                        colors.appendChild(color)
+                    })
+                })
+            })
+            
+            document.getElementsByTagName('main')[0].appendChild(colors)
+        </script>
+    </body>
+</html>
