@@ -1,6 +1,6 @@
 # [hexcodes](//chrisnager.github.io/hexcodes)
 
-All possible three digit hexcodes. See [here](//chrisnager.github.io/hexcodes).
+All 4,096 shorthand hexcodes. See [here](//chrisnager.github.io/hexcodes).
 
 ## License
 
